@@ -7,11 +7,8 @@
 </label>
 
 {{#calendar-button event onClick=(action "myAction") as |b|}}
-  {{#b.google}}
-    Add To Google
-  {{/b.google}}
   {{#b.ical}}
-    Add to Anything
+    Add to Calendar
   {{/b.ical}}
 {{/calendar-button}}
 
