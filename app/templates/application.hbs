@@ -1,4 +1,18 @@
 {{page-title "SandboxEmberAddCalendarButton"}}
 
+<h1>Sandbox - Ember Add Calendar Button</h1>
+
+<label>Start date of event:
+  <Input @type="date" @value={{this.startDate}} />
+</label>
+
+{{#calendar-button event onClick=(action "myAction") as |b|}}
+  {{#b.google}}
+    Add To Google
+  {{/b.google}}
+  {{#b.ical}}
+    Add to Anything
+  {{/b.ical}}
+{{/calendar-button}}
 
 {{outlet}}
